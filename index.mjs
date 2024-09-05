@@ -1,4 +1,5 @@
 import ical from 'node-ical';
+import { formatInTimeZone } from 'date-fns-tz';
 
 const calendar = process.env.CALENDAR || 'https://calendar.google.com/calendar/ical/98ffa06e098bbabc76b5c80dd24a2f596219f3c3276ac94219725528def57501%40group.calendar.google.com/public/basic.ics';
 
@@ -12,7 +13,7 @@ const eventList = Object.values(events)
     subtitle: '',
     url: e.location,
     otherUrls: ['https://www.twitch.tv/penbuvt'],
-    datetime: e.start,
+    datetime: formatInTimeZone(new Date(e.start), 'America/Toronto', "yyyy-MM-dd'T'HH:mm:ssXXX"),
     id: e.uid,
   }));
 
