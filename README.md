@@ -1,6 +1,7 @@
 # cal2sched
 
-[Penbu][]'s helper script to turn a remote ICS file from Google Calendar into a list of events for use in his [schedule][]. Do not expect this to be robust.
+[Penbu][]'s helper script to turn a remote ICS file from Google Calendar into a list of events for use in his [schedule][].
+Do not expect this to be robust or polished: it is only as good as it needs to be.
 
 [Penbu]: https://www.penbuvt.ca/
 [schedule]: https://github.com/penbuvt/penbuvt.github.io/blob/ffe9430a34b125dd6e42b1c8e5e08abe29d9540a/static/schedule/index.html#L29
